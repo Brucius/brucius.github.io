@@ -1,9 +1,13 @@
-a, .sec-contact .btn {
-  -webkit-transition: all .25s;
+// Variables
+$red: #ad0000;
+
+// Placeholder selectors
+%transition {
   transition: all .25s;
 }
 
 /*=Typography=*/
+
 html {
   font-size: 16px;
 }
@@ -69,6 +73,7 @@ p {
 }
 
 /*=Base=*/
+
 section {
   padding: 5em 0;
 }
@@ -77,8 +82,8 @@ footer {
   padding: 3em 0;
 }
 
-@media screen and (max-width: 768px) and (min-width: 485px) {
-  form {
+form {
+  @media screen and (max-width: 768px) and (min-width: 485px) {
     max-width: 70%;
   }
 }
@@ -89,12 +94,17 @@ ul {
   list-style-type: none;
 }
 
+a {
+  @extend %transition;
+}
+
 hr {
   margin-bottom: 3em;
   width: 7%;
 }
 
 /*=Layout=*/
+
 .sec-folio .row {
   margin-bottom: 3em;
 }
@@ -104,6 +114,7 @@ hr {
 }
 
 /*Header*/
+
 .navbar-default {
   background: #fff;
 }
@@ -112,30 +123,32 @@ hr {
   vertical-align: top;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ad0000;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: $red;
 }
 
-.navbar-default .navbar-nav > li > a:active {
-  color: #940000;
+.navbar-default .navbar-nav>li>a:active {
+  color: darken($red, 5%);
 }
 
 /*Main*/
+
 .sec-main {
   position: relative;
   height: 560px;
   background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
   background-size: cover;
-}
-.sec-main:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+  }
 }
 
 .main-heading {
@@ -152,14 +165,17 @@ hr {
 }
 
 /*About*/
+
 .sec-about a {
   color: #000;
-}
-.sec-about a:hover, .sec-about a:focus {
-  color: #ad0000;
+  &:hover,
+  &:focus {
+    color: $red;
+  }
 }
 
 /*Services*/
+
 .sec-services {
   background: #f9f9f9;
 }
@@ -175,7 +191,7 @@ hr {
 }
 
 .sec-services .fa-code {
-  width: 68px;
+  width: 68px
 }
 
 .sec-services h2 {
@@ -183,14 +199,16 @@ hr {
 }
 
 /*Testimonials*/
+
 .sec-testimonials {
   background: #f9f9f9;
 }
 
 /*Contact*/
+
 .sec-contact .form-control:focus {
-  border-color: #ad0000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+  border-color: $red;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
 }
 
 .sec-contact .btn {
@@ -198,24 +216,25 @@ hr {
   background: #000;
   font-size: .95rem;
   color: #fff;
-}
-.sec-contact .btn:hover, .sec-contact .btn:focus {
-  background: #ad0000;
-  border-color: #7a0000;
+  
+  @extend %transition;
+  
+  &:hover,
+  &:focus {
+    background: $red;
+    border-color: darken($red, 10%);
+  }
 }
 
 /*Footer*/
+
 footer {
   background: #000;
 }
 
 .soc-media-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .soc-media-ul li:not(:first-child) a {
@@ -229,7 +248,9 @@ footer {
   color: #fff;
   border-radius: 50%;
   border: 2px solid;
-}
-.soc-media-ul a:hover, .soc-media-ul a:focus {
-  color: #ad0000;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
 }
