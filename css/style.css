@@ -125,7 +125,7 @@ hr {
 .sec-main {
   position: relative;
   height: 560px;
-  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+  background: url(https://source.unsplash.com/XwrPo8MWUGQ/1920x1080) no-repeat center center;
   background-size: cover;
 }
 .sec-main:after {
@@ -232,4 +232,42 @@ footer {
 }
 .soc-media-ul a:hover, .soc-media-ul a:focus {
   color: #ad0000;
+}
+
+/*portfolio block hover*/
+.containery {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.containery:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
