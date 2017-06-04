@@ -1,3 +1,3 @@
-#Oaker Min's Portfolio Page
+Oaker Min's Portfolio Page to find out more about him and where is past projects are showcased
 <br>
 https://brucius.github.io/
