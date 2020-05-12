@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brucius.github.io/</loc>
+    <loc>https://thevisualist.cloud/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brucius.github.io/fr/"
+                href="https://thevisualist.cloud/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brucius.github.io/"
+                href="https://thevisualist.cloud/"
                 />
   </url>
   
   <url>
-    <loc>https://brucius.github.io/categories/</loc>
+    <loc>https://thevisualist.cloud/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brucius.github.io/fr/categories/"
+                href="https://thevisualist.cloud/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brucius.github.io/categories/"
+                href="https://thevisualist.cloud/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://brucius.github.io/tags/</loc>
+    <loc>https://thevisualist.cloud/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://brucius.github.io/fr/tags/"
+                href="https://thevisualist.cloud/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://brucius.github.io/tags/"
+                href="https://thevisualist.cloud/tags/"
                 />
   </url>
   
